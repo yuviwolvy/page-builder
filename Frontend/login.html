@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="vh-100">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-10 col-xl-9">
+            <div
+              class="d-flex justify-content-center mt-5"
+              style="margin-bottom: 8%"
+            >
+              <img src="./images/logo.svg" alt="Logo" />
+              <p class="mt-3" style="font-size: xx-large">
+                <strong>Rapid Page Builder</strong>
+              </p>
+            </div>
+
+            <div class="card mb-5 mx-2" style="border-radius: 0%">
+              <div class="card-body p-5">
+                <form>
+                  <h2 class="mb-5">Sign In</h2>
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="email"
+                      >Username or email address
+                      <span style="color: #da0128">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="password"
+                      >Password <span style="color: #da0128">*</span></label
+                    >
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control form-control-lg"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+
+                  <div class="d-flex mb-4">
+                    <button
+                      type="button"
+                      class="btn btn-block btn-lg"
+                      style="background-color: #4f46e5; color: white"
+                      onclick="login()"
+                    >
+                      Sign In
+                    </button>
+                  </div>
+
+                  <p class="text-muted mb-5">
+                   Oh! You don't have an account?
+                    <a href="index.html" style="color: #4f46e5"
+                      ><u>Register here</u></a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+  </body>
+</html>
